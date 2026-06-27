@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products & Sweets – Dairy Farm Rajkot</title>
+  <meta name="description" content="Explore Dairy Farm Rajkot's range of fresh dairy products and our famous traditional sweets in Rajkot." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥛</text></svg>" />
+
+  <style>
+    .no-price-notice {
+      background: linear-gradient(135deg, var(--green-pale), var(--sweet-light));
+      border-radius: var(--radius-md);
+      padding: var(--space-md) var(--space-lg);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-xl);
+      border-left: 4px solid var(--sweet-orange);
+    }
+    .no-price-notice p {
+      font-size: .9rem;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+    .no-price-notice strong { color: var(--sweet-orange); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Dairy Farm Rajkot Home">
+        <div class="nav-logo-icon">🥛</div>
+        <span class="nav-logo-text">Dairy Farm <span class="nav-logo-leaf" style="color:var(--sweet-orange); font-size:1rem; display:block;">Rajkot</span></span>
+      </a>
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="index.html"    class="nav-link">Home</a></li>
+        <li><a href="about.html"    class="nav-link">About</a></li>
+        <li><a href="products.html" class="nav-link active">Products & Sweets</a></li>
+        <li><a href="gallery.html"  class="nav-link">Gallery</a></li>
+        <li><a href="contact.html"  class="nav-link nav-cta" style="background:var(--sweet-orange);">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero"
+          style="background-image:url('assets/images/hero_farm.png');"
+          aria-label="Products page hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span style="color:#fff;">Products</span>
+        </nav>
+        <h1>Dairy & Traditional Sweets</h1>
+        <p style="color:rgba(255,255,255,.8); font-size:1.1rem; max-width:520px; margin-top:.5rem;">
+          Pure, natural dairy and our famous traditional sweets — crafted with love in Rajkot.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <section class="section-padding" style="background:var(--off-white);" aria-label="Our products">
+    <div class="container">
+
+      <!-- No pricing notice -->
+      <div class="no-price-notice reveal">
+        <span style="font-size:1.6rem; flex-shrink:0;">🍯</span>
+        <p>
+          <strong>Visit Our Shop:</strong> We rely on freshness, so our products are best enjoyed direct from the store.
+          We do not sell online. To enquire about bulk orders, availability or to find us,
+          <a href="contact.html" style="color:var(--sweet-orange); font-weight:600;">contact us</a>
+          or <a href="https://wa.me/919537711119" target="_blank" rel="noopener"
+                style="color:var(--sweet-orange); font-weight:600;">WhatsApp us directly</a>.
+        </p>
+      </div>
+
+      <!-- SECTION A: SWEETS -->
+      <div class="section-header reveal" id="sweets" style="margin-top: 2rem;">
+        <span class="section-label" style="background:var(--sweet-light); color:var(--sweet-orange);">Our Signature Sweets</span>
+        <h2 class="section-title">Traditional <span>Indian Sweets</span></h2>
+      </div>
+
+      <div class="products-full-grid">
+
+        <!-- Bangle Sweets -->
+        <article class="product-full-card reveal delay-1">
+          <div class="product-full-img">
+            <img src="assets/images/product_bangle_sweets.png"
+                 alt="Special Bangle Sweets" loading="lazy" />
+            <span class="product-organic-tag" style="background:var(--sweet-orange);">⭐ Signature Product</span>
+          </div>
+          <div class="product-full-body">
+            <h2 style="color:var(--sweet-orange);">Special Bangle Sweets</h2>
+            <p>
+              Our absolute bestseller and signature creation. The Bangle Sweet is an exquisite
+              masterpiece handcrafted exclusively in-house. It promises a rich, melt-in-the-mouth
+              texture, elevated by the aroma of pure ingredients and a delicate touch of tradition.
+            </p>
+            <div class="product-benefits">
+              <span class="benefit-tag" style="border-color:var(--sweet-orange); color:var(--sweet-orange);">✅ Unique Recipe</span>
+              <span class="benefit-tag">✅ Rich Taste</span>
+              <span class="benefit-tag">✅ Highly Gifted</span>
+            </div>
+            <a href="contact.html" class="btn btn-sweet" style="margin-top:var(--space-md); width:100%; justify-content:center;">
+              📞 Enquire in Shop
+            </a>
+          </div>
+        </article>
+
+        <!-- Peda & Barfi -->
+        <article class="product-full-card reveal delay-2">
+          <div class="product-full-img">
+            <img src="assets/images/IMG_3977_jpg.webp"
+                 alt="Traditional Sweets like Peda and Barfi" loading="lazy" />
+            <span class="product-organic-tag" style="background:#d97706;">🍯 Pure Ghee</span>
+          </div>
+          <div class="product-full-body">
+            <h2>Peda, Barfi & Halwa</h2>
+            <p>
+              Embrace the festive spirit every day with our classic traditional sweets.
+              From the soft, cardamom-infused Peda to the rich, slow-cooked Barfi and warm Halwa,
+              everything is made with the purest milk and our own fresh desi ghee.
+            </p>
+            <div class="product-benefits">
+              <span class="benefit-tag">✅ Authentic Flavor</span>
+              <span class="benefit-tag">✅ Fresh Milk Base</span>
+              <span class="benefit-tag">✅ Perfect for Festivals</span>
+            </div>
+            <a href="contact.html" class="btn btn-sweet" style="margin-top:var(--space-md); width:100%; justify-content:center;">
+              📞 Enquire in Shop
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- SECTION B: DAIRY -->
+      <div class="section-header reveal" id="dairy" style="margin-top: 5rem;">
+        <span class="section-label">Our Fresh Dairy</span>
+        <h2 class="section-title">Fresh <span>Dairy Products</span></h2>
+      </div>
+
+      <div class="products-full-grid">
+
+        <!-- Milk -->
+        <article class="product-full-card reveal delay-1">
+          <div class="product-full-img">
+            <img src="assets/images/product_milk.png" alt="Fresh Milk" loading="lazy" />
+            <span class="product-organic-tag">🐄 Daily Fresh</span>
+          </div>
+          <div class="product-full-body">
+            <h2>Farm Fresh Milk</h2>
+            <p>Collected every morning from our healthy, free-grazing cows. 100% pure and unadulterated.</p>
+            <div class="product-benefits">
+              <span class="benefit-tag">✅ No Preservatives</span>
+              <span class="benefit-tag">✅ Full Cream</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ghee -->
+        <article class="product-full-card reveal delay-2">
+          <div class="product-full-img">
+            <img src="assets/images/product_ghee.png" alt="Pure Desi Ghee" loading="lazy" />
+            <span class="product-organic-tag">⭐ Premium</span>
+          </div>
+          <div class="product-full-body">
+            <h2>Pure Desi Ghee</h2>
+            <p>Prepared carefully to preserve all natural vitamins and aroma. Great for cooking and traditional rituals.</p>
+            <div class="product-benefits">
+              <span class="benefit-tag">✅ Rich Aroma</span>
+              <span class="benefit-tag">✅ Authentic</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Curd -->
+        <article class="product-full-card reveal delay-1">
+          <div class="product-full-img">
+            <img src="assets/images/product_curd.png" alt="Homestyle Curd" loading="lazy" />
+            <span class="product-organic-tag">🏺 Probiotic</span>
+          </div>
+          <div class="product-full-body">
+            <h2>Homestyle Curd</h2>
+            <p>Naturally set overnight for a thick, creamy texture filled with healthy probiotics.</p>
+            <div class="product-benefits">
+              <span class="benefit-tag">✅ Naturally Set</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Butter -->
+        <article class="product-full-card reveal delay-2">
+          <div class="product-full-img">
+            <img src="assets/images/product_butter.png" alt="Pure White Butter" loading="lazy" />
+            <span class="product-organic-tag">🧈 Farm Churned</span>
+          </div>
+          <div class="product-full-body">
+            <h2>Pure White Butter</h2>
+            <p>Hand-churned from fresh cream the traditional way. Soft, rich, and free from any additives.</p>
+            <div class="product-benefits">
+              <span class="benefit-tag">✅ Hand Churned</span>
+              <span class="benefit-tag">✅ No Additives</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paneer -->
+        <article class="product-full-card reveal delay-1">
+          <div class="product-full-img" style="background:linear-gradient(135deg, var(--earth-cream), var(--sweet-light)); display:flex; align-items:center; justify-content:center;">
+            <img src="assets/images/Homemade-Paneer-16x9-1.jpg">
+            <span class="product-organic-tag">🧀 Fresh Daily</span>
+          </div>
+          <div class="product-full-body">
+            <h2>Homestyle Paneer</h2>
+            <p>Soft, spongy paneer made fresh every morning. Perfect for curries, salads and tikkas.</p>
+            <div class="product-benefits">
+              <span class="benefit-tag">✅ High Protein</span>
+              <span class="benefit-tag">✅ Soft Texture</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner" aria-label="Enquiry CTA">
+    <div class="container">
+      <div class="cta-inner" style="background: linear-gradient(135deg, var(--sweet-orange), #d97706);">
+        <div class="cta-text reveal-left">
+          <h2>Craving Fresh Sweets?</h2>
+          <p>Drop by the shop to pick up fresh Dairy & Sweets for your family today.</p>
+        </div>
+        <div class="cta-actions reveal-right">
+          <a href="contact.html" class="btn btn-outline">📍 Find the Shop</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🥛</div>
+            <span class="nav-logo-text" style="color:#fff;">Dairy Farm<br><span class="nav-logo-leaf" style="color:var(--sweet-orange); font-size:1rem;">Rajkot</span></span>
+          </a>
+          <p style="margin-top:1rem;">A trusted name in Rajkot for fresh dairy products and delicious traditional sweets.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Sweet & Dairy Showcase</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Discover</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="products.html#sweets">Signature Bangle Sweets</a></li>
+            <li><a href="products.html#sweets">Fresh Barfi & Peda</a></li>
+            <li><a href="products.html#dairy">Daily Fresh Milk</a></li>
+            <li><a href="products.html#dairy">Pure Desi Ghee</a></li>
+            <li><a href="products.html#dairy">Homestyle Paneer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <span>Kailashwadi Circle, Geban Shah Pir Rd, near SBI Bank, Dargah Road, Junction Plot, Rajkot, Gujarat 360001</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <span><a href="tel:+919408877774" style="color:inherit;">+91 9408877774</a></span>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <span>© 2026 Dairy Farm Rajkot. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919408877774" class="whatsapp-float" target="_blank" rel="noopener">💬</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

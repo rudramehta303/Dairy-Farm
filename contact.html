@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Dairy Farm Rajkot</title>
+  <meta name="description" content="Contact Dairy Farm Rajkot for fresh dairy and delicious traditional sweets." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥛</text></svg>" />
+
+  <style>
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .88rem;
+      margin-top: .8rem;
+    }
+    .hours-table td {
+      padding: .55em 0;
+      color: var(--gray-600);
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .hours-table td:last-child {
+      text-align: right;
+      font-weight: 600;
+      color: var(--sweet-orange);
+    }
+    .hours-table tr:last-child td { border: none; }
+
+    .quick-action-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+    }
+    .quick-action-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+      text-align: center;
+      box-shadow: var(--shadow-card);
+      text-decoration: none;
+      color: var(--gray-800);
+      transition: all var(--transition-mid);
+      border: 2px solid transparent;
+    }
+    .quick-action-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--sweet-orange);
+    }
+    .quick-action-icon {
+      font-size: 2.5rem;
+      margin-bottom: .6rem;
+      display: block;
+    }
+    .quick-action-card strong {
+      display: block;
+      font-size: .95rem;
+      color: var(--sweet-orange);
+      margin-bottom: .2rem;
+    }
+    .quick-action-card span {
+      font-size: .82rem;
+      color: var(--gray-600);
+    }
+    .char-count {
+      font-size: .78rem;
+      color: var(--gray-400);
+      text-align: right;
+      margin-top: .2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Dairy Farm Rajkot Home">
+        <div class="nav-logo-icon">🥛</div>
+        <span class="nav-logo-text">Dairy Farm <span class="nav-logo-leaf" style="color:var(--sweet-orange); font-size:1rem; display:block;">Rajkot</span></span>
+      </a>
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="index.html"    class="nav-link">Home</a></li>
+        <li><a href="about.html"    class="nav-link">About</a></li>
+        <li><a href="products.html" class="nav-link">Products & Sweets</a></li>
+        <li><a href="gallery.html"  class="nav-link">Gallery</a></li>
+        <li><a href="contact.html"  class="nav-link active nav-cta" style="background:var(--sweet-orange);">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero"
+          style="background-image:url('assets/images/hero_milk_production.jpg');"
+          aria-label="Contact page hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span style="color:#fff;">Contact</span>
+        </nav>
+        <h1>Let's Connect!</h1>
+        <p style="color:rgba(255,255,255,.8); font-size:1.1rem; max-width:540px; margin-top:.5rem;">
+          Whether you want to enquire about our sweets or fresh dairy products — we'd love to hear from you.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK ACTION CARDS -->
+  <section style="background:var(--sweet-light); padding:var(--space-xl) 0;" aria-label="Quick contact options">
+    <div class="container">
+      <div class="quick-action-grid">
+
+        <a href="tel:+919408877774" class="quick-action-card reveal delay-1">
+          <span class="quick-action-icon">📞</span>
+          <strong>Call Us</strong>
+          <span>+91 9408877774</span>
+        </a>
+
+        <a href="https://wa.me/9408877774"
+           target="_blank" rel="noopener" class="quick-action-card reveal delay-2">
+          <span class="quick-action-icon">💬</span>
+          <strong>WhatsApp</strong>
+          <span>Chat Instantly</span>
+        </a>
+
+        <a href="#map" class="quick-action-card reveal delay-4">
+          <span class="quick-action-icon">📍</span>
+          <strong>Get Directions</strong>
+          <span>Open in Maps</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTACT SECTION -->
+  <section class="section-padding" style="background:var(--off-white);" aria-label="Contact information and form">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- LEFT: Info -->
+        <div class="contact-info-block reveal-left" style="background:#fff;">
+          <span class="section-label" style="background:var(--sweet-light); color:var(--sweet-orange);">Get in Touch</span>
+          <h2>We're Always Happy<br>to <span style="color:var(--sweet-orange);">Hear from You</span></h2>
+          <p>
+            Have questions about our Signature Bangle Sweets or daily fresh milk?
+            Want to place an enquiry? Drop by our store in Rajkot or reach out directly.
+          </p>
+
+          <!-- Address -->
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">📍</div>
+            <div class="contact-detail-text">
+              <strong>Shop Address</strong>
+              <span>
+                Kailashwadi Circle, Geban Shah Pir Rd,<br>
+                near SBI Bank, Dargah Road,<br>
+                Junction Plot, Rajkot, Gujarat 360001
+              </span>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">📞</div>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <span>
+                <a href="tel:+919408877774" style="color:var(--gray-600);">+91 9408877774</a>
+              </span>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">🕗</div>
+            <div class="contact-detail-text">
+              <strong>Working Hours</strong>
+              <span style="display:block; margin-top:.3rem;">
+                <table class="hours-table" aria-label="Opening hours">
+                  <tbody>
+                    <tr><td>Monday – Sunday</td><td>Daily Fresh</td></tr>
+                  </tbody>
+                </table>
+              </span>
+            </div>
+          </div>
+
+          <!-- WhatsApp button -->
+          <a href="https://wa.me/9408877774"
+             class="btn btn-sweet" target="_blank" rel="noopener" style="margin-top:20px; display:inline-flex; width:100%; justify-content:center;">
+             💬 Chat with Us on WhatsApp
+          </a>
+
+        </div>
+
+        <!-- RIGHT: Contact Form -->
+        <div class="reveal-right">
+          <div class="contact-form-wrap">
+            <h3>📩 Send an Enquiry</h3>
+
+            <!-- The form -->
+            <form id="contactForm" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="contactName">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" class="form-control" id="contactName" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Phone Number <span aria-hidden="true">*</span></label>
+                <input type="tel" class="form-control" id="contactPhone" name="phone" maxlength="10" required />
+              </div>
+              <div class="form-group">
+                <label for="contactEnquiry">Enquiry Type</label>
+                <select class="form-control" id="contactEnquiry" name="enquiry">
+                  <option value="" disabled selected>Select a topic…</option>
+                  <option value="bangle-sweets">Bangle Sweets Enquiry</option>
+                  <option value="traditional-sweets">Traditional Sweets Enquiry</option>
+                  <option value="dairy">Dairy Products</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">Your Message <span aria-hidden="true">*</span></label>
+                <textarea class="form-control" id="contactMessage" name="message" rows="5" maxlength="500" required></textarea>
+                <div class="char-count"><span id="charCount">0</span> / 500</div>
+              </div>
+              <button type="submit" class="btn btn-sweet" style="width:100%; justify-content:center; font-size:1rem;">
+                ✉️ Send Message
+              </button>
+            </form>
+
+            <div class="form-success" id="formSuccess" aria-live="polite">
+              <div class="success-icon">🎉</div>
+              <h4>Thank You!</h4>
+              <p style="color:var(--gray-600); font-size:.95rem;">
+                Your enquiry has been received. We'll get back to you soon.
+              </p>
+              <a href="index.html" class="btn btn-sweet" style="margin-top:1.2rem;">← Back to Home</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE MAPS EMBED -->
+  <section class="map-section" style="padding:0 0 var(--space-2xl);" id="map" aria-label="Shop location on map">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:var(--space-lg);">
+        <span class="section-label" style="background:var(--sweet-light); color:var(--sweet-orange);">Find Us</span>
+        <h2 class="section-title">📍 Visit our <span>Shop</span></h2>
+      </div>
+
+      <!-- Map embed -->
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Junction%20Plot,%20Rajkot,%20Gujarat&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          title="Dairy Farm Rajkot Location on Google Maps"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div style="text-align:center; margin-top:var(--space-md);" class="reveal">
+        <a href="https://maps.app.goo.gl/Ja91qenwsV3RXMvn8"
+           target="_blank" rel="noopener"
+           class="btn btn-sweet">
+          📍 Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🥛</div>
+            <span class="nav-logo-text" style="color:#fff;">Dairy Farm<br><span class="nav-logo-leaf" style="color:var(--sweet-orange); font-size:1rem;">Rajkot</span></span>
+          </a>
+          <p style="margin-top:1rem;">A trusted name in Rajkot for fresh dairy products and delicious traditional sweets.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Sweet & Dairy Showcase</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Discover</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="products.html#sweets">Signature Bangle Sweets</a></li>
+            <li><a href="products.html#sweets">Fresh Barfi & Peda</a></li>
+            <li><a href="products.html#dairy">Daily Fresh Milk</a></li>
+            <li><a href="products.html#dairy">Pure Desi Ghee</a></li>
+            <li><a href="products.html#dairy">Homestyle Paneer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <span>Kailashwadi Circle, Geban Shah Pir Rd, near SBI Bank, Dargah Road, Junction Plot, Rajkot, Gujarat 360001</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <span><a href="tel:+919408877774" style="color:inherit;">+91 9408877774</a></span>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <span>© 2026 Dairy Farm Rajkot. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919408877774" class="whatsapp-float" target="_blank" rel="noopener">💬</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
