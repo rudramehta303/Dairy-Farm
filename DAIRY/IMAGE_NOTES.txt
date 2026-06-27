@@ -1,0 +1,20 @@
+IMAGE NOTES — read before publishing
+=====================================
+
+FIXED:
+- hero_farm.png is now used as the homepage hero background (was oranges photo).
+- hero_milk_production.jpg is now used as the About/Contact page-hero background (was oranges photo).
+- product_butter.png is now used as a new "Pure White Butter" product card (was unused).
+
+NEEDS YOUR INPUT — paneer & 2 broken images:
+- product_paneer.jpg in your upload was a cooked paneer-curry dish (paneer butter masala),
+  not a plain paneer product shot, so it doesn't fit next to milk/ghee/curd photos.
+- product_traditional_sweets.jpg and shop_sweets.jpg were both broken (0-byte/404 placeholder) files.
+
+For all three, I've used a clean Unsplash stock placeholder (same hosting service your
+original site already used for other photos) so nothing on the live site is broken.
+But for the best result, I'd recommend you snap and upload three real photos of YOUR shop:
+  1. A plain block/cubes of your actual paneer
+  2. Your traditional sweets (peda/barfi) tray
+  3. Your shop's storefront or counter
+Just send them over and I'll swap them in — it'll look far more authentic than any stock photo.
